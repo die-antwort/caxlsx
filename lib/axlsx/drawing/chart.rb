@@ -188,6 +188,7 @@ module Axlsx
       str << ('<c:chartSpace xmlns:c="' << XML_NS_C << '" xmlns:a="' << XML_NS_A << '" xmlns:r="' << XML_NS_R << '">')
       str << ('<c:date1904 val="' << Axlsx::Workbook.date1904.to_s << '"/>')
       str << ('<c:style val="' << style.to_s << '"/>')
+      str << '<c:roundedCorners val="false"/>'
       str << '<c:chart>'
       @title.to_xml_string(str) unless @title.empty?
       str << ('<c:autoTitleDeleted val="' << (@title == nil).to_s << '"/>')
