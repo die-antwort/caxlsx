@@ -206,7 +206,7 @@ module Axlsx
         str << '<c:overlay val="0"/>'
         str << '</c:legend>'
       end
-      str << '<c:plotVisOnly val="1"/>'
+      str << '<c:plotVisOnly val="0"/>'
       str << ('<c:dispBlanksAs val="' << display_blanks_as.to_s << '"/>')
       str << '<c:showDLblsOverMax val="1"/>'
       str << '</c:chart>'
